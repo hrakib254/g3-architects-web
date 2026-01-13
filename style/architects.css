@@ -184,12 +184,28 @@ main>section{
 .feature{
   gap: 140px;
 }
+.feature-architec img{
+  width: 100%;
+}
+
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
 
 
 /* media quary  */
 @media screen and (max-width:576px){
 
-  .navber,.nav-links, .team{
+  .navber,.nav-links, .team,.feature {
     flex-direction: column;
   }
 
@@ -202,7 +218,11 @@ main>section{
   .our-feature{
     margin-left: 20px;
   }
-
+  #experience-badge{
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+   
   .facts-container{
     justify-items: center;
     gap: 24px;
