@@ -146,6 +146,22 @@ main>section{
 }
 .fact-description{
   max-width: 540px;
+  margin-bottom: 100px;
+  /* margin-top: 24px; */
+}
+
+.sponsors-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsors-companis{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponsors-companis img{
+  filter: grayscale(100%);
 }
 
 /* media quary  */
@@ -154,14 +170,28 @@ main>section{
   .navber,.nav-links, .team{
     flex-direction: column;
   }
-  .team-img-container{
-    grid-template-columns: repeat(1,1fr);
+
+
+  .team-img-container, 
+  .facts-container,
+  .sponsors-companis{
+    grid-template-columns:repeat(1,1fr);
   }
   .our-feature{
     margin-left: 20px;
   }
+
+  .facts-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .sponsors-companis{
+    justify-items: center;
+    gap: 50px;
+  }
   
 }
+
 @media screen and (min-width:576px) and (max-width:992px){
   .team{
     flex-direction: column;
